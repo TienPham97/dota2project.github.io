@@ -1,0 +1,593 @@
+
+@keyframes heroesMove {
+    0%{transform:translateX(0px)}
+    100%{transform:translateX(-74.3%)}
+}
+
+a{
+    text-decoration: none;
+}
+.container {
+    margin: 0;
+    font-family: 'Reaver', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+.header-content{
+    width: 60%;
+    margin-top: 100px;
+    margin-left: 100px;
+    font-family: "Radiance", sans-serif;
+}
+.headerBigText{
+    width: 100%;
+    font-size: 4vw;
+    color: white;
+    line-height: 110%;
+    font-family: "Reaver", sans-serif;
+    
+}
+.headerSmallText{
+    color: #ffffff90;
+    font-weight: 600;
+    margin-top: 10px;
+    letter-spacing: 3px;
+    font-family: "Radiance", sans-serif;
+    font-size: 1vw;
+
+}
+.redbar{
+    height: 3px;
+    min-height: 3px;
+    background-color: #FF6046;
+    width: 100px;
+    border-radius: 1px;
+    margin: 20px 0;
+}
+.plDl{
+    min-width: 150px;
+    width: 280px;
+    /* width: 100%; */
+    border: 2px solid white;
+    padding: 15px;
+    border-radius: 5px;
+    /* margin-right: 20px; */
+    /* margin-bottom: 200px; */
+    color: grey;
+}
+.plDl b{
+    font-size: 23px;
+    color: white;
+}
+
+.lastNews{
+    width: 70%;
+    min-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10000000000;
+}
+.lastNews a{
+    flex: 1;
+    height: 245px;
+    margin: 5px;
+}
+h4{
+    color: rgb(173, 173, 173);
+    word-spacing: 5px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+.shortFilmContest>div{
+    background: url('../images/index/5f665b9c994c96908d35536b65c00e049e6d35f8.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    /* height: 300px; */
+}
+.supporterClub>div{
+    background: url('../images/index/0727269d8b113a7084170074559f673b8282c0c8.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    /* height: 300px; */
+    /* margin: 0 10px; */
+    width: 100%;
+    height: 100%;
+}
+.DPCProfileTeam>div{
+    background: url('../images/index/eb440e1e38164e3612c821105136e1ad95da0769.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+}
+.seeWhatNews{
+    margin-top: -100px;
+    background: url('../images/index/radiant_dire5.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* opacity: 0.7; */
+    /* height: 800px; */
+    text-align: center;
+    padding-top: 600px;
+    /* padding-bottom: 550PX; */
+}
+.smallCap{
+    font-family: "Reaver", sans-serif;
+    font-size: 4.375vw;
+    font-weight: 700;
+    color: #fdfdfd90;
+    line-height: 0;
+    /* min-width: 50%; */
+}
+.bigCap{
+    font-size: 6.25vw;
+    font-weight: 700;
+    font-family: "Reaver", sans-serif;
+    color: whitesmoke;
+}
+.content{
+    color: #E2DACE;
+    width: 60%;
+    margin: 30px auto;
+    font-size: 1.5vw;
+    font-family: "Radiance",sans-serif;
+}
+.viewAllheroes{
+    margin-top: 100px;
+    background: url('../images/index/heroes_full.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center ;
+    /* opacity: 0.7; */
+    /* height: 800px; */
+    text-align: center;
+    padding-top: 500px;
+    /* padding-bottom: 550PX; */
+}
+.heroesTable{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    margin: 50px auto;
+    overflow: hidden;
+    padding-bottom: 50px;
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 20%, black 80%, transparent 100%);
+}
+.heroesTable p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding-top: 55%; */
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    width: 100%;
+    position: absolute;
+    bottom: -100px;
+    margin: 0;
+}
+p>img{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px ;
+}
+.row1, .row3, .row5{
+    width: 6050px;
+    height: 144px;
+    margin: 5px 0 5px 0;
+    /* overflow: hidden; */
+    display: flex;
+    /* justify-content: center; */
+    animation-name: heroesMove;
+    animation-duration: 150s;
+    animation-timing-function: linear;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+    
+}
+.row1>a{
+    flex: 1;
+    align-items:center;
+    justify-content: center;
+    height: 100%;
+    margin: 5px;
+
+}
+.row1>a:hover p{
+    transform: translateY(-110px);
+    transition-duration: 0.4s;
+}
+.row1>a:hover .heroes{
+    transform: scale(1.3);
+    transition: ease-in;
+    transition-duration: 0.3s;
+    z-index: 10000;
+    opacity: 100%;
+}
+.axe{
+    background: url('../images/index/heroes/row1/axe.png');
+}
+.antimage{
+    background: url('../images/index/heroes/row1/antimage.png');
+}
+.bane{
+    background: url('../images/index/heroes/row1/bane.png');
+}
+.bloodseeker{
+    background: url('../images/index/heroes/row1/bloodseeker.png');
+}
+.maiden{
+    background: url('../images/index/heroes/row1/crystal_maiden.png');
+}
+.drow{
+    background: url('../images/index/heroes/row1/drow_ranger.png');
+}
+.earthshaker{
+    background: url('../images/index/heroes/row1/earthshaker.png');
+}
+.juggernaut{
+    background: url('../images/index/heroes/row1/juggernaut.png');
+}
+.mirana{
+    background: url('../images/index/heroes/row1/mirana.png');
+}
+.nevermore{
+    background: url('../images/index/heroes/row1/nevermore.png');
+}
+.morphling{
+    background: url('../images/index/heroes/row1/morphling.png');
+}
+.phantomlancer{
+    background: url('../images/index/heroes/row1/phantom_lancer.png');
+}
+.puck{
+    background: url('../images/index/heroes/row1/puck.png');
+}
+.pudge{
+    background: url('../images/index/heroes/row1/pudge.png');
+}
+.razor{
+    background: url('../images/index/heroes/row1/razor.png');
+}
+.sandking{
+    background: url('../images/index/heroes/row1/sand_king.png');
+}
+.stormspirit{
+    background: url('../images/index/heroes/row1/storm_spirit.png');
+}
+.sven{
+    background: url('../images/index/heroes/row1/sven.png');
+}
+.tiny{
+    background: url('../images/index/heroes/row1/tiny.png');
+}
+.vengefulspirit{
+    background: url('../images/index/heroes/row1/vengefulspirit.png');
+}
+.windrunner{
+    background: url('../images/index/heroes/row1/windrunner.png');
+}
+.zeus{
+    background: url('../images/index/heroes/row1/zuus.png');
+}
+.kunkka{
+    background: url('../images/index/heroes/row1/kunkka.png');
+}
+.lina{
+    background: url('../images/index/heroes/row1/lina.png');
+}
+.lich{
+    background: url('../images/index/heroes/row1/lich.png');
+}
+.lion{
+    background: url('../images/index/heroes/row2/lion.png');
+}
+.shadowshaman{
+    background: url('../images/index/heroes/row2/shadow_shaman.png');
+}
+.slardar{
+    background: url('../images/index/heroes/row2/slardar.png');
+}
+.tide{
+    background: url('../images/index/heroes/row2/tidehunter.png');
+}
+.witchdotor{
+    background: url('../images/index/heroes/row2/witch_doctor.png');
+}
+.riki{
+    background: url('../images/index/heroes/row2/riki.png');
+}
+.enigma{
+    background: url('../images/index/heroes/row2/enigma.png');
+}
+.tinker{
+    background: url('../images/index/heroes/row2/tinker.png');
+}
+.sniper{
+    background: url('../images/index/heroes/row2/sniper.png');
+}
+.necrophos{
+    background: url('../images/index/heroes/row2/necrolyte.png');
+}
+.warlock{
+    background: url('../images/index/heroes/row2/warlock.png');
+}
+.beastmaster{
+    background: url('../images/index/heroes/row2/beastmaster.png');
+}
+.qop{
+    background: url('../images/index/heroes/row2/queenofpain.png');
+}
+.venom{
+    background: url('../images/index/heroes/row2/venomancer.png');
+}
+.fv{
+    background: url('../images/index/heroes/row2/faceless_void.png');
+}
+.wraithking{
+    background: url('../images/index/heroes/row2/skeleton_king.png');
+}
+.dp{
+    background: url('../images/index/heroes/row2/death_prophet.png');
+}
+.pa{
+    background: url('../images/index/heroes/row2/phantom_assassin.png');
+}
+.pugna{
+    background: url('../images/index/heroes/row2/pugna.png');
+}
+.ta{
+    background: url('../images/index/heroes/row2/templar_assassin.png');
+}
+.viper{
+    background: url('../images/index/heroes/row2/viper.png');
+}
+.luna{
+    background: url('../images/index/heroes/row2/luna.png');
+}
+.dk{
+    background: url('../images/index/heroes/row2/dragon_knight.png');
+}
+.dazzle{
+    background: url('../images/index/heroes/row2/dazzle.png');
+}
+.clockwerk{
+    background: url('../images/index/heroes/row3/clockwerk.png');
+}
+.leshrac{
+    background: url('../images/index/heroes/row3/leshrac.png');
+}
+.np{
+    background: url('../images/index/heroes/row3/furion.png');
+}
+.lifestealer{
+    background: url('../images/index/heroes/row3/life_stealer.png');
+}
+.darkseer{
+    background: url('../images/index/heroes/row3/dark_seer.png');
+}
+.clinkz{
+    background: url('../images/index/heroes/row3/clinkz.png');
+}
+.omniknight{
+    background: url('../images/index/heroes/row3/omniknight.png');
+}
+.enchantress{
+    background: url('../images/index/heroes/row3/enchantress.png');
+}
+.huskar{
+    background: url('../images/index/heroes/row3/huskar.png');
+}
+.nightstalker{
+    background: url('../images/index/heroes/row3/night_stalker.png');
+}
+.brood{
+    background: url('../images/index/heroes/row3/broodmother.png');
+}
+.bounty{
+    background: url('../images/index/heroes/row3/bounty_hunter.png');
+}
+.weaver{
+    background: url('../images/index/heroes/row3/weaver.png');
+}
+.jakiro{
+    background: url('../images/index/heroes/row3/jakiro.png');
+}
+.batrider{
+    background: url('../images/index/heroes/row3/batrider.png');
+}
+.chen{
+    background: url('../images/index/heroes/row3/chen.png');
+}
+.spectre{
+    background: url('../images/index/heroes/row3/spectre.png');
+}
+.doom{
+    background: url('../images/index/heroes/row3/doom_bringer.png');
+}
+.aa{
+    background: url('../images/index/heroes/row3/ancient_apparition.png');
+}
+.ursa{
+    background: url('../images/index/heroes/row3/ursa.png');
+}
+.bara{
+    background: url('../images/index/heroes/row3/spirit_breaker.png');
+}
+.gyro{
+    background: url('../images/index/heroes/row3/gyrocopter.png');
+}
+.alc{
+    background: url('../images/index/heroes/row3/alchemist.png');
+}
+.invo{
+    background: url('../images/index/heroes/row3/invoker.png');
+}
+.bb{
+    background: url('../images/index/heroes/row5/bristleback.png');
+}
+.tusk{
+    background: url('../images/index/heroes/row5/tusk.png');
+}
+.sky{
+    background: url('../images/index/heroes/row5/skywrath_mage.png');
+}
+.aba{
+    background: url('../images/index/heroes/row5/abaddon.png');
+}
+.elder{
+    background: url('../images/index/heroes/row5/elder_titan.png');
+}
+.lc{
+    background: url('../images/index/heroes/row5/legion_commander.png');
+}
+.ember{
+    background: url('../images/index/heroes/row5/ember_spirit.png');
+}
+.earthspirit{
+    background: url('../images/index/heroes/row5/earth_spirit.png');
+}
+.tb{
+    background: url('../images/index/heroes/row5/terrorblade.png');
+}
+.phoenix{
+    background: url('../images/index/heroes/row5/phoenix.png');
+}
+.oracle{
+    background: url('../images/index/heroes/row5/oracle.png');
+}
+.techies{
+    background: url('../images/index/heroes/row5/techies.png');
+}
+.ww{
+    background: url('../images/index/heroes/row5/winter_wyvern.png');
+}
+.aw{
+    background: url('../images/index/heroes/row5/arc_warden.png');
+}
+.underlord{
+    background: url('../images/index/heroes/row5/abyssal_underlord.png');
+}
+.mk{
+    background: url('../images/index/heroes/row5/monkey_king.png');
+}
+.pango{
+    background: url('../images/index/heroes/row5/pangolier.png');
+}
+.dw{
+    background: url('../images/index/heroes/row5/dark_willow.png');
+}
+.grim{
+    background: url('../images/index/heroes/row5/grimstroke.png');
+}
+.mars{
+    background: url('../images/index/heroes/row5/mars.png');
+}
+.voidspirit{
+    background: url('../images/index/heroes/row5/void_spirit.png');
+}
+.snap{
+    background: url('../images/index/heroes/row5/snapfire.png');
+}
+.hoodwink{
+    background: url('../images/index/heroes/row5/hoodwink.png');
+}
+.dawnbreaker{
+    background: url('../images/index/heroes/row5/dawnbreaker.png');
+}
+.heroes{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center ;
+    /* opacity: 80%; */
+    position: relative;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.TI{
+    background: url('../images/index/dpc.jpg');
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin: 20px auto;
+}
+.logoDoto{
+    width: 5%;
+    min-width: 60px;
+    margin: 0 auto;
+    margin-top: 550px;
+}
+.bloodBG{
+    background: url('../images/index/background4.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 20px 0 60px 10%;
+}
+
+@media only screen and (max-width:768px) {
+    .menu{
+        flex-grow: 0;
+        justify-content: space-around;
+        width: 283px;
+    }
+    .menu a {
+        margin: 5px;
+    }
+    .lastNews{
+        width: 100%;
+        min-width: 0;
+    }
+    .row1, .row2, .row3, .row4, .row5{
+        width: 5025px;
+        margin: 0;
+    }
+    .heroes{
+        background-size: contain;
+    }
+    .footerLogo{
+        width: 500px;
+        min-width: 0;
+    }
+    .footerLogo img{
+        max-height: 25px;
+    }
+    .logodota2{
+        display: none;
+    }
+    nav .plFF{
+        display: none;
+    }
+    nav{
+        width: 100%;
+        display: inline-block;
+        margin: 0 auto;
+    }
+    .menu{
+        width: 100%;
+        display: flex;
+        font-size: 3vw;
+    }
+    .content{
+        font-size: 3vw;
+    }
+    .row1>a:hover p{
+        transform: translateY(-120px);
+        transition-duration: 0.4s;
+    }
+}

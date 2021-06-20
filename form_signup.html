@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/form_signup.css">
+</head>
+<body>
+    <header>
+        <div class="logo_steam">
+            <img src="images/form_signup/logo_steam.svg" alt="">
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#">STORE</a></li>
+                <li><a href="#">COMMUNITY</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">SUPPORT</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <h1>CREATE YOUR ACCOUNT</h1>
+        <form action="">
+            <div class="flex-column">
+                <label for="name">Your Name</label>
+                <input type="text" name="txtName" required placeholder="Mời bạn nhập tên" title="Chỉ nhập chữ" pattern="[a-zA-Z]+">
+            </div>
+            <div class="flex-column">
+                <label for="email">Email Address</label>
+                <input type="email" name="textEmail" required placeholder="Mời bạn nhập email"  title="Nhập email" pattern="\w+@\w+(\.\w{2,3}){1,2}">
+            </div>
+            <div class="flex-column">
+                <label for="confirm-email">Confirm email</label>
+                <input type="email" name="CfEmail" required placeholder="Mời bạn nhập lại email" title="Nhập email" pattern="\w+@\w+(\.\w{2,3}){1,2}">
+            </div>
+            <div class="flex-column">
+                <label for="password">Password</label>
+                <input type="password" name="textPass" required placeholder="Mời bạn nhập Password" title="Nhập Password ít nhất 6 kí tự" pattern=".{6,}">
+            </div>
+            <div class="flex-column">
+                <label for="password">Confirm Password</label>
+                <input type="password" name="CfPass" required placeholder="Mời bạn nhập lại Password" title="Nhập Password ít nhất 6 kí tự" pattern=".{6,}">
+            </div>
+            <div>
+            <input type="checkbox" name="checkbox" class="checkbox" required title="Vui lòng xác nhận bạn trên 13 tuổi và đồng ý các điều khoản">
+            <label for="">I am 13 years of age or older and agree to the terms of the <a href="#">Subscriber Agreement</a> and the <a href="#">Valve Privacy Policy</a>.</label>
+            </div>
+
+            <button type="submit" class="submit"><span>Sign up</span></button>
+        </form>
+    </main>
+    <footer>
+        
+        <div class="footer-flex">
+            <div>
+                <img src="images/form_signup/footerLogo_valve_new.png" alt="">
+            </div>
+            <p>© 2021 Valve Corporation. All rights reserved. All trademarks are property of their respective owners in the US and other countries.
+                VAT included in all prices where applicable.</p>
+            <div>
+                <img src="images/form_signup/logo_steam_footer.png" alt="">
+            </div>  
+        </div>
+    </footer>
+</body>
+</html>

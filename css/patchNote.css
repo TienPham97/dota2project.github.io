@@ -1,0 +1,136 @@
+body{
+    background: url('../images/shortFilmContest/bg_repeater.jpg');
+}
+a{
+    text-decoration: none;
+}
+.patch{
+    margin-top: 40px;
+    background: black;
+    padding: 40px 200px;
+}
+section h1{
+    color: #ed3b1c;
+    font-size: 4vw ;
+    font-family: "Radiance", sans-serif;
+    margin-bottom: 0;
+    letter-spacing: 5px;
+}
+span{
+    color: #ed3b1c;
+    font-size: 1.5vw;
+    font-family: "Radiance", sans-serif;
+}
+main{
+    width: 50%;
+    margin: 50px auto;
+}
+.flexColumn{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 15px 5px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.38) 3.07%, rgba(6, 37, 65, 0.3) 88.06%);
+}
+.title{
+    color: white;
+    font-weight: bolder;
+    font-size: 2vw;
+    font-family: "Reaver", sans-serif;
+    background: linear-gradient(to right, #833312FF, #83331200);
+    padding: 15px;
+}
+.content{
+    color: #bbbbbbee;
+    padding: 40px;
+    margin: 0;
+    font-size: 1vw;
+    font-family: "Radiance", sans-serif;
+    
+}
+.block{
+    padding: 0 20px 10px 40px;
+}
+.block .content{
+    padding: 0;
+}
+.names{
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 40px;
+    font-family:"Reaver", sans-serif;
+    font-size: 1vw;
+}
+.skillImg{
+    margin-right:  20px;
+    width: 55px;
+    height: 55px;
+}
+.itemImg{
+    margin-right:  20px;
+    width: 72px;
+    height: 52px;
+}
+.heroesImg{
+    width: 128px;
+    height: 72px;
+    margin-right:  20px;
+}
+.flexPatch{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+.flexPatch .names{
+    margin: 0;
+}
+@media only screen and (max-width:768px) {
+    .names{
+        font-size: 2vw;
+    }
+    .content{
+        font-size: 2vw;
+    }
+    main{
+        width: 90%;
+    }
+    .footerLogo{
+        width: 500px;
+        min-width: 0;
+    }
+    .footerLogo img{
+        max-height: 25px;
+    }
+    .menu{
+        flex-grow: 0;
+        justify-content: space-around;
+        width: 283px;
+    }
+    .menu a {
+        margin: 5px;
+    }
+    section h1{
+        font-size: 8vw;
+    }
+    span{
+        font-size: 3vw;
+    }
+    .logodota2{
+        display: none;
+    }
+    nav .plFF{
+        display: none;
+    }
+    nav{
+        width: 100%;
+        display: inline-block;
+        margin: 0 auto;
+    }
+    .menu{
+        width: 100%;
+        display: flex;
+        font-size: 3vw;
+    }
+}

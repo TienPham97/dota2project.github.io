@@ -1,0 +1,191 @@
+body{
+    background: url('../images/newAndUpdate/bg_repeater.jpg');
+}
+header{
+    margin-bottom: 50px;
+    height: 500px;
+}
+header video{
+    opacity: 100%;
+}
+a{
+    text-decoration: none;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+h1{
+    text-align: center;
+    color: rgb(177, 177, 177);
+    font-family: "Reaver", sans-serif;
+}
+main a{
+    width: 400px;
+    height: 200px;
+    /* display: inline-block; */
+    box-shadow: 0 0 15px 5px black;
+    position: relative;
+    border-bottom: 2px solid #555;
+}
+.blur{
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    background: black;
+    opacity: 50%;
+    z-index: -1;
+}
+.title span, .content{
+    color: rgba(255,255,255,.7);
+    padding-left: 10px;
+    font-family: "Radiance", sans-serif;
+    position: relative;
+    z-index: 1;
+}
+h2{
+    color: #fff;
+    margin: 10px 0 10px 0 ;
+    padding-left: 10px;
+    font-family: "Reaver", sans-serif;
+}
+.box1{
+    overflow: hidden;
+    padding-top: 140px;
+    margin: 20px;  
+}
+.box2{
+    overflow: hidden;
+    padding-top: 100px;
+    margin: 20px;  
+}
+.plusUpdate{
+    background: url('../images/newAndUpdate/plusUpdate.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.shortFilmContest{
+    background: url('../images/newAndUpdate/shortFlm.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.DPCProfile{
+    background: url('../images/newAndUpdate/eb440e1e38164e3612c821105136e1ad95da0769.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.workShopCall{
+    background: url('../images/newAndUpdate/workshop.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.Dawnbreaker{
+    background: url('../images/newAndUpdate/dawnbreaker.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.guide{
+    background: url('../images/newAndUpdate/guide.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.mainTrailer{
+    background: url('../images/newAndUpdate/mainTrailer.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.teaserTrailer{
+    background: url('../images/newAndUpdate/teaser.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.animeSeries{
+    background: url('../images/newAndUpdate/animeseries.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.Overwatch{
+    background: url('../images/newAndUpdate/overwatch.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.dotaProCircuit{
+    background: url('../images/newAndUpdate/dotaProCircuit.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.hoodwink{
+    background: url('../images/newAndUpdate/hoodwink.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center center; */
+}
+main>a:hover{
+    transform: scale(1.05);
+    transition-duration: .5s;
+}
+main>a:hover .title{
+    transform: translateY(-95px);
+    transition-duration: .5s;
+    /* transition: ease; */
+}
+main>a:hover .content{
+    transform: translateY(-95px);
+    transition-duration: .5s;
+    /* transition: ease-in; */
+}
+main>a:hover{
+    border-bottom: 2px solid #ff6046
+}
+@media only screen and (max-width:768px) {
+    .menu{
+        flex-grow: 0;
+        justify-content: space-around;
+        width: 283px;
+    }
+    .menu a {
+        margin: 5px;
+    }
+    .footerLogo{
+        width: 500px;
+        min-width: 0;
+    }
+    .footerLogo img{
+        max-height: 25px;
+    }
+    .logodota2{
+        display: none;
+    }
+    nav .plFF{
+        display: none;
+    }
+    nav{
+        width: 100%;
+        display: inline-block;
+        margin: 0 auto;
+    }
+    .menu{
+        width: 100%;
+        display: flex;
+        font-size: 3vw;
+    }
+    .content{
+        font-size: 3vw;
+    }
+}

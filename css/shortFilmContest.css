@@ -1,0 +1,100 @@
+*{
+    font-family: "Radiance", sans-serif;
+}
+body{
+    background: url('../images/shortFilmContest/bg_repeater.jpg');
+}
+header{
+    background: url('../images/shortFilmContest/54baf9893b9cf03af9c7ff5af02ca0d576fac30e.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    -webkit-mask-image: linear-gradient(to top, transparent 25%, black 100%);
+    margin-bottom: -200px;
+}
+nav{
+    position: relative;
+    z-index: 10000;
+}
+a{
+    text-decoration: none;
+    font-weight: bolder;
+}
+h1{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: "Reaver", sans-serif;
+    font-size: 2vw;
+    /* margin-top: 150px; */
+
+}
+span{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    color: #999;
+}
+main{
+    margin-top: 100px;
+    margin: 0 auto;
+    width: 60vw;
+}
+iframe{
+    display: block;
+    width: 60vw;
+    height: 35vw;
+    margin: 0 auto;
+    /* position: relative;
+    z-index: 100000; */
+}
+main a{
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
+}
+main a:hover{
+    color: #ff6046;
+}
+main p{
+    color: rgba(255,255,255,.8);
+    font-family: "Radiance", sans-serif;
+    line-height: 150%;
+    font-weight: 500;
+    font-size: 1.375vw;
+}
+@media only screen and (max-width:768px) {
+    .menu{
+        flex-grow: 0;
+        justify-content: space-around;
+        width: 200px;
+    }
+    .menu a {
+        margin: 5px;
+    }
+    .footerLogo{
+        width: 500px;
+        min-width: 0;
+    }
+    .footerLogo img{
+        max-height: 25px;
+    }
+    main p{
+        font-size: 3vw;
+    }
+    .logodota2{
+        display: none;
+    }
+    nav .plFF{
+        display: none;
+    }
+    nav{
+        width: 100%;
+        display: inline-block;
+        margin: 0 auto;
+    }
+    .menu{
+        width: 100%;
+        display: flex;
+        font-size: 3vw;
+    }
+}
